@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:TextInputLayout="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imagen"
+        android:layout_width="match_parent"
+        android:layout_height="245dp"
+        android:paddingTop="50dp"
+        android:src="@drawable/itesogram"
+        TextInputLayout:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-20dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/correo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="text"
+        TextInputLayout:layout_constraintTop_toBottomOf="@id/imagen">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/contra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="text"
+        TextInputLayout:layout_constraintTop_toBottomOf="@id/correo">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/material_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="button_label_enabled"
+        android:layout_marginTop="25dp"
+        TextInputLayout:layout_constraintTop_toBottomOf="@id/contra"/>
+
+    <TextView
+        android:id="@+id/olvidaste"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        TextInputLayout:layout_constraintTop_toBottomOf="@id/material_button"
+        android:text="¿Olvidaeste tus datos de inicio de sesión?" />
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Obtén ayuda"
+        TextInputLayout:layout_constraintEnd_toEndOf="parent"
+        TextInputLayout:layout_constraintLeft_toRightOf="@id/olvidaste"
+        TextInputLayout:layout_constraintTop_toBottomOf="@id/material_button" />
+
+    <TextView
+        android:id="@+id/cuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        TextInputLayout:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="30dp"
+        android:text="¿No tienes cuenta?"/>
+
+
+    <TextView
+        android:id="@+id/registrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:textStyle="bold"
+        TextInputLayout:layout_constraintBottom_toBottomOf="parent"
+        TextInputLayout:layout_constraintStart_toEndOf="@id/cuenta"
+        android:layout_marginLeft="20dp"
+        android:text="Registrate"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
