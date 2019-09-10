@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:hint="text"
+        android:hint="Teléfono, correo electrónico o usuario"
         TextInputLayout:layout_constraintTop_toBottomOf="@id/imagen">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:hint="text"
+        android:hint="Contraseña"
         TextInputLayout:layout_constraintTop_toBottomOf="@id/correo">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -54,8 +54,9 @@
         android:id="@+id/material_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="button_label_enabled"
+        android:text="Iniciar Sesión"
         android:layout_marginTop="25dp"
+        android:onClick="sendMessage"
         TextInputLayout:layout_constraintTop_toBottomOf="@id/contra"/>
 
     <TextView

@@ -18,7 +18,7 @@ class ActivityLogin : AppCompatActivity() {
     }
 
     fun sendMessage(view: View) {
-        val intent = Intent(this, MainActivity::class.java)
+        val intent = Intent(this, ActivitySaveInParse::class.java)
         intent.putExtra("SHOW_WLCOME", true)
         startActivity(intent)
     }
