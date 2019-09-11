@@ -83,7 +83,7 @@
         android:layout_height="wrap_content"
         TextInputLayout:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="30dp"
-        android:text="¿No tienes cuenta?"/>
+        android:text="¿No tienes cuenta?" />
 
 
     <TextView
@@ -95,7 +95,7 @@
         TextInputLayout:layout_constraintBottom_toBottomOf="parent"
         TextInputLayout:layout_constraintStart_toEndOf="@id/cuenta"
         android:layout_marginLeft="20dp"
-        android:text="Registrate"/>
+        android:text="Registrate" />
 
 
 
